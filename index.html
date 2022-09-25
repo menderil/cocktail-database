@@ -5,27 +5,27 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+		<title>Cocktail Database</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<section><!-- page title-->
-			<h1>Cocktail Picker</h1><!--placeholder-->
-		</section>
+		<header class="centered">
+			<h1>Cocktail Database</h1>		
+			<section> <!-- user input section -->
+					<input type="text" placeholder="Margarita">
+					<button type="button" name="button">Search</button>	
+			</section>
+		</header>
 
-		<section> <!-- user input section -->
-				<input type="text" placeholder="Margarita">
-				<button type="button" name="button">Search</button>	
-		</section>
-
-		<section><!--results-->
-			<section>
-				<h3>Name: </h3>
-				<h4 id="nameResult"></h4>
-				<img id='imgResult' href="">
+		<!--results get inserted here-->
+		<div>
+			<section id='photoResult' class="centered">
+				<!--<h3>Name: </h3> -->
+				<h3 id="nameResult">Enter a drink name</h3>
+				<img id='imgResult' src="img/bottles.jpg">
 			</section>
 
 			<!--TODO-->
@@ -36,15 +36,14 @@
 				</ol>
 			</section>
 
-			<section>
-				<h3>Instructions</h3>
+			<section id="instructions">
+				<h3>Instructions:</h3>
 				<p id="instResult">
 					<!--insert instructions here-->
 				</p>
 			</section>
-		
+		</div>
 
-		</section>
 		<script src="js/main.js"></script>
 	</body>
 </html>

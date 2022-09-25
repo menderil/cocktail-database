@@ -10,13 +10,46 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+body{
+  max-width: 1280px;
+  margin: auto;
+  background-color: rgb(96, 108, 56);
+}
+header{
+  padding-bottom: 10px;
+}
+
 img{
   max-height: 350px;
+  max-width: 350px;
+  border-radius: 3px;
 }
+
+.centered{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div, header{
+  width: 75%;
+  margin: auto;
+  background-color: rgb(254, 250, 224);
+  border: 5px solid rgb(40, 54, 24);
+  border-radius: 10px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
+#photoResult{
+  height: 450px;
+}
+#instructions{
+  height: 150px;
+  margin-left: 20px;
+}
 .hidden{
   display: none;
 }

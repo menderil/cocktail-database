@@ -20,5 +20,10 @@ function getDrink(){
         })
         .catch(err => {
             console.log(`error ${err}`);
+            
+                //no result found in database
+            nameResult.innerText = "No result found, try again"
+            imageResult.src = "img/bottles.jpg"
+            instructionResult.innerText = ''
         });
 }
